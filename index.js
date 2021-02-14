@@ -35,6 +35,7 @@ const generateId = () => {
     const id = Math.floor((Math.random() * 1000000000000))
     return id
 }
+app.use(express.static('build'))
 app.use(cors())
 app.use(express.json())
 /*   app.use(morgan(mor = (tokens, request, response) => {
